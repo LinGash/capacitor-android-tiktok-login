@@ -9,7 +9,6 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        maven { url "https://artifact.bytedance.com/repository/AwemeOpenSDK" }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.1'
@@ -46,7 +45,6 @@ android {
 repositories {
     google()
     mavenCentral()
-    maven { url "https://artifact.bytedance.com/repository/AwemeOpenSDK" }
 }
 
 
