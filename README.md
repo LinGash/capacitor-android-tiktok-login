@@ -13,6 +13,10 @@ This Capacitor plugin enables TikTok authentication in Android applications. The
 npm install capacitor-android-tiktok-login
 ```
 
+## Tutorial
+
+You can check the tutorial [here](https://lingash.medium.com/how-to-implement-tiktok-login-in-capacitor-android-ed6dfa017015).
+
 ## Usage
 
 Import the plugin and call the `login` method:
@@ -52,9 +56,10 @@ Add the following intent filter to your app's `AndroidManifest.xml` file:
     <action android:name="android.intent.action.VIEW" />
     <category android:name="android.intent.category.DEFAULT" />
     <category android:name="android.intent.category.BROWSABLE" />
-    <data android:scheme="https" android:host="*" />
+    <data android:scheme="https" android:host="YOUR_REDIRECT_URI" />
 </intent-filter>
 ```
+For `YOUR_REDIRECT_URI` , add your own domain like yourdomain.com
 
 ### 2. Update `build.gradle`
 
